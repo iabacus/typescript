@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko-kr" ng-app="myNodeJsStyApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Typescript</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../Component/Open/bootstrap-3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Component/Open/smartmenus-1.0.0-beta1/addons/bootstrap/jquery.smartmenus.bootstrap.css" >
+    <link  rel="stylesheet" href="../css/custom2.css">
+    <link type="text/css" rel="stylesheet" href="../Component/Open/syntaxhighlighter_3.0.83/styles/shCoreDefault.css"/>
+
+
+    <style>
+        body { padding-top: 60px; }
+        .box { width: 300px; border: 1px solid #ccc; border-radius: 5px; height: 100px; padding: 10px; box-shadow: 0 0 5px #ccc}
+
+        .box1 { width: 200px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin:0 10px; }
+        .logo { background:url(logo.jpg) no-repeat; width: 317px; height: 60px; }
+
+        .red { color: #FF0000}
+        .blue { color: #0080FF}
+        a {cursor: pointer}
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body >
+
+  <div class="navbar  navbar-inverse navbar-fixed-top" role="navigation" >
+    <div class="navbar-header" >
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">ABACUS</a>
+    </div>
+
+    <top-menu></top-menu>
+  </div>
+
+  <section ng-controller="contentAreaCtl">
+    <div id="contentArea"
+         ng-include="template.includeLink1"
+         autoscroll="true"
+         class="container-fluid view"
+         style="height:100">
+    </div>
+  </section>
+
+
+
+  <div class="col-md-12 bottom-space">&nbsp; &nbsp;</div>
+  <footer class="navbar-inverse navbar-fixed-bottom">
+      <div class="container-fluid">
+          <span class="text-muted pull-right">@Copyright 2016 ABACUS</span>
+      </div>
+  </footer>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="../Component/Open/jquery/jquery-1.11.3.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="../Component/Open/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+  <script src="../Component/Open/node_modules/angular/angular.min.js"></script>
+  <script src="../Component/Open/node_modules/angular-route/angular-route.min.js"></script>
+
+  <!-- SmartMenus jQuery plugin -->
+  <script type="text/javascript" src="../Component/Open/smartmenus-1.0.0-beta1/jquery.smartmenus.js"></script>
+  <script type="text/javascript" src="../Component/Open/smartmenus-1.0.0-beta1/addons/bootstrap/jquery.smartmenus.bootstrap.js"></script>
+
+  <script type="text/javascript" src="../Component/Open/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
+  <script type="text/javascript" src="../Component/Open/syntaxhighlighter_3.0.83/scripts/shAutoloader.js"></script>
+
+  <!-- <script src="userJs/include.js"></script> -->
+  <script src="script/common/menu.js"></script>
+  <script src="script/common/syntaxHigh.js"></script>
+
+  <script src="script/app.js"></script>
+  <script src="script/controllers/root/systaxHighlighterCtl.js"></script>
+  <script src="script/directive/topmenu.js"></script>
+  <script src="script/controllers/root/menuCtl.js"></script>
+  <script src="script/controllers/root/contentAreaCtl.js"></script>
+
+
+
+</body>
